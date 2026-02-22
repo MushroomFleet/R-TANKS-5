@@ -135,37 +135,6 @@ Build and modify your Home Base layout with the built-in level editor. Place pla
 | Audio | Procedural Web Audio API (SNES-style synthesis) |
 | Persistence | localStorage (settings, loadout, inventory, progress) |
 
-## Architecture
-
-| Module | Purpose |
-|--------|---------|
-| `src/game/` | Core systems: physics, weapons, AI, input, audio, targeting, secrets |
-| `src/world/` | Open world: terrain, valley generation, loot, home base, world seed |
-| `src/combat/` | Combat layer: explosions, wingman airstrikes |
-| `src/screens/` | Screen components: main menu, home base, open world, results, editor, settings |
-| `src/components/3d/` | Three.js scene: tank, terrain, arena, skybox, effects, explosions |
-| `src/components/ui/` | HUD overlays: health, weapons, minimap, world map, dialogs, wingman |
-| `src/data/` | Static data: arenas, NPC dialogs, NPC art assets |
-| `src/utils/` | Types, constants, NPC image storage |
-| `src/audio/` | Engine audio, SNES-style synthesis |
-
-## Local Development
-
-```bash
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Type check
-npx tsc --noEmit
-
-# Production build
-npm run build
-```
-
-The dev server runs at `http://localhost:5173`.
 
 ---
 
